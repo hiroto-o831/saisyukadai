@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> - AnimeHub</title>
+    <title>ガイドライン - AnimeList</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,80 +91,6 @@
         .float-link:hover {
             transform: translateY(-2px);
         }
-
-        .character-hero {
-            position: relative;
-            height: 80vh;
-            background: url(MFG/gousei.png) center/cover no-repeat;
-            border-radius: 20px;
-            overflow: hidden;
-        }
-
-        .character-hero::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(90deg, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, .2) 60%, rgba(0, 0, 0, 0) 100%);
-        }
-
-        .character-info {
-            position: absolute;
-            bottom: 40px;
-            left: 40px;
-            z-index: 2;
-            color: #fff;
-            max-width: 500px;
-        }
-
-        .character-name {
-            font-size: 3rem;
-            font-weight: 800;
-            letter-spacing: .05em;
-        }
-
-        .character-en {
-            font-size: 1.2rem;
-            opacity: .8;
-        }
-
-        .character-meta {
-            margin-top: 20px;
-            display: grid;
-            grid-template-columns: 120px 1fr;
-            row-gap: 10px;
-            font-size: .95rem;
-        }
-
-        .character-meta span {
-            opacity: .7;
-        }
-
-        .section-title {
-            font-weight: 700;
-            letter-spacing: .1em;
-            margin-bottom: 1.5rem;
-        }
-
-        .profile-box {
-            background: #111;
-            color: #fff;
-            border-radius: 15px;
-            padding: 30px;
-        }
-
-        .profile-box p {
-            line-height: 1.9;
-            opacity: .9;
-        }
-
-        .other-chars img {
-            border-radius: 12px;
-            transition: transform .3s;
-        }
-
-        .other-chars img:hover {
-            transform: scale(1.05);
-        }
     </style>
 </head>
 
@@ -204,35 +130,80 @@
             </div>
         </div>
     </nav>
+    <p class="text-secondary mt-3">
+        すべてのユーザーが安心して利用できるコミュニティを目指しています
+    </p>
 
-    <!-- キャラメインビジュアル -->
-    <section class="container my-5">
-        <div class="character-hero">
-            <div class="character-info">
-                <div class="character-name">片桐 夏向（カナタ　リヴィントン）</div>
-                <div class="character-en">Kanata Katagiri</div>
-                <div class="character-meta mt-4">
-                    <span>年齢</span>
-                    <div>19歳</div>
-                    <span>所属</span>
-                    <div>無し</div>
-                    <span>マシン</span>
-                    <div>Toyota 86 GT</div>
+    <main class="container">
+
+        <!-- はじめに -->
+        <section class="mb-5">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title fw-bold mb-3">はじめに</h3>
+                    <p class="card-text">
+                        本コミュニティは、ユーザー同士が安心して交流できる場を提供することを目的としています。
+                        以下のガイドラインを守り、健全なコミュニティ運営にご協力ください。
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- プロフィール -->
-    <section class="container my-5">
-        <h2 class="section-title">PROFILE</h2>
-        <div class="profile-box">
-            <p>
-                公道最速を目指すレース「MFG」に突如現れた謎のドライバー。
-                卓越したテクニックと冷静な判断力で、強豪たちを相手に快進撃を続ける。
+        <!-- 守ってほしいこと -->
+        <section class="mb-5">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title fw-bold mb-3">守ってほしいこと</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">他者を尊重し、誹謗中傷や差別的発言をしない</li>
+                        <li class="list-group-item">暴力的・攻撃的・不適切なコンテンツを投稿しない</li>
+                        <li class="list-group-item">虚偽の情報や誤解を招く内容を拡散しない</li>
+                        <li class="list-group-item">プライバシーや個人情報を侵害しない</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 禁止事項 -->
+        <section class="mb-5">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title fw-bold mb-3">禁止事項</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">スパム行為、宣伝目的のみの投稿</li>
+                        <li class="list-group-item">違法行為を助長する内容</li>
+                        <li class="list-group-item">なりすまし行為</li>
+                        <li class="list-group-item">運営の妨害や不正アクセス</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 違反時の対応 -->
+        <section class="mb-5">
+            <div class="alert alert-danger">
+                <h4 class="alert-heading fw-bold">ガイドライン違反時の対応</h4>
+                <p class="mb-0">
+                    ガイドラインに違反した場合、投稿の削除やアカウント停止などの対応を行う場合があります。
+                    悪質な場合は、事前の通知なく措置を取ることがあります。
+                </p>
+            </div>
+        </section>
+
+        <!-- お問い合わせ -->
+        <section class="mb-5 text-center">
+            <h4 class="fw-bold mb-3">お問い合わせ</h4>
+            <p class="mb-4">
+                ガイドラインに関するご質問や違反報告は、お問い合わせフォームよりご連絡ください。
             </p>
+            <a href="#" class="btn btn-danger px-4">お問い合わせはこちら</a>
+        </section>
+        <div class="text-center">
+            <a href="anime-gideline.html" class="btn btn-outline-primary">
+                <i class="bi bi-arrow-left"></i> 前ページへ戻る
+            </a>
         </div>
-    </section>
+    </main>
 
     <!-- フッター -->
     <footer class="py-4">

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> - AnimeHub</title>
+    <title>MFゴースト-PV - AnimeList</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,80 +91,6 @@
         .float-link:hover {
             transform: translateY(-2px);
         }
-
-        .character-hero {
-            position: relative;
-            height: 80vh;
-            background: url(MFG/gousei.png) center/cover no-repeat;
-            border-radius: 20px;
-            overflow: hidden;
-        }
-
-        .character-hero::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(90deg, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, .2) 60%, rgba(0, 0, 0, 0) 100%);
-        }
-
-        .character-info {
-            position: absolute;
-            bottom: 40px;
-            left: 40px;
-            z-index: 2;
-            color: #fff;
-            max-width: 500px;
-        }
-
-        .character-name {
-            font-size: 3rem;
-            font-weight: 800;
-            letter-spacing: .05em;
-        }
-
-        .character-en {
-            font-size: 1.2rem;
-            opacity: .8;
-        }
-
-        .character-meta {
-            margin-top: 20px;
-            display: grid;
-            grid-template-columns: 120px 1fr;
-            row-gap: 10px;
-            font-size: .95rem;
-        }
-
-        .character-meta span {
-            opacity: .7;
-        }
-
-        .section-title {
-            font-weight: 700;
-            letter-spacing: .1em;
-            margin-bottom: 1.5rem;
-        }
-
-        .profile-box {
-            background: #111;
-            color: #fff;
-            border-radius: 15px;
-            padding: 30px;
-        }
-
-        .profile-box p {
-            line-height: 1.9;
-            opacity: .9;
-        }
-
-        .other-chars img {
-            border-radius: 12px;
-            transition: transform .3s;
-        }
-
-        .other-chars img:hover {
-            transform: scale(1.05);
-        }
     </style>
 </head>
 
@@ -204,35 +130,67 @@
             </div>
         </div>
     </nav>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="container my-5">
 
-    <!-- キャラメインビジュアル -->
-    <section class="container my-5">
-        <div class="character-hero">
-            <div class="character-info">
-                <div class="character-name">片桐 夏向（カナタ　リヴィントン）</div>
-                <div class="character-en">Kanata Katagiri</div>
-                <div class="character-meta mt-4">
-                    <span>年齢</span>
-                    <div>19歳</div>
-                    <span>所属</span>
-                    <div>無し</div>
-                    <span>マシン</span>
-                    <div>Toyota 86 GT</div>
+                <!-- セレクト（小さく・中央） -->
+                <div class="row justify-content-center mb-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <label class="form-label text-center d-block small mb-2">
+                            作品を選択 <span class="text-danger">*</span>
+                        </label>
+
+                        <select id="animeSelect" class="form-select form-select-sm">
+                            <option value="">作品を選択してください</option>
+                            <option value="https://www.youtube.com/embed/CVTTn7Q1v64">
+                                PV#1
+                            </option>
+                            <option value="https://www.youtube.com/embed/Xq_H1KEeObE">
+                                PV#2
+                            </option>
+                            <option value="https://www.youtube.com/embed/uoQyNAx0UZk">
+                                PV#3
+                            </option>
+                        </select>
+
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- プロフィール -->
-    <section class="container my-5">
-        <h2 class="section-title">PROFILE</h2>
-        <div class="profile-box">
-            <p>
-                公道最速を目指すレース「MFG」に突如現れた謎のドライバー。
-                卓越したテクニックと冷静な判断力で、強豪たちを相手に快進撃を続ける。
-            </p>
+                <!-- 動画（大きく表示） -->
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 col-xl-8">
+
+                        <div id="pvArea" class="ratio ratio-16x9 d-none shadow-lg rounded overflow-hidden">
+                            <iframe id="pvPlayer" src="" title="PV再生"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-    </section>
+    </div>
+    <!-- PV表示エリア -->
+    <div id="pvArea" class="ratio ratio-16x9 d-none">
+        <iframe id="pvPlayer" src="" title="PV再生"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <div class="text-center">
+        <a href="anime-detail2.html" class="btn btn-outline-primary">
+            <i class="bi bi-arrow-left"></i> 前ページへ戻る
+        </a>
+    </div>
+
+
+
 
     <!-- フッター -->
     <footer class="py-4">
@@ -278,6 +236,23 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="common.js"></script>
+
+    <script>
+        const select = document.getElementById("animeSelect");
+        const pvArea = document.getElementById("pvArea");
+        const pvPlayer = document.getElementById("pvPlayer");
+
+        select.addEventListener("change", function () {
+            if (this.value) {
+                pvPlayer.src = this.value;
+                pvArea.classList.remove("d-none");
+            } else {
+                pvPlayer.src = "";
+                pvArea.classList.add("d-none");
+            }
+        });
+    </script>
+
 </body>
 
 </html>
