@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>anime
+    <title>AXEL
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
@@ -14,7 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="base.css">
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="fabi2.png">
     <style>
         .anime-card img {
             width: 100%;
@@ -51,6 +51,128 @@
                 object-position: 50% 40%;
             }
         }
+
+        @media (max-width: 576px) {
+
+            body {
+                font-size: 0.95rem;
+            }
+
+            section {
+                margin-bottom: 3rem;
+            }
+
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+
+            .hero-section {
+                padding: 3rem 1rem;
+            }
+
+            .hero-section h1 {
+                font-size: 2rem;
+                line-height: 1.3;
+            }
+
+            .hero-section p {
+                font-size: 1rem;
+            }
+
+            .hero-section .input-group-lg .form-control {
+                font-size: 0.9rem;
+            }
+
+            .hero-section .btn {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .anime-card img {
+                height: 220px;
+                object-fit: cover;
+            }
+
+            .anime-card .card-body {
+                padding: 0.75rem;
+            }
+
+            .anime-card h5 {
+                font-size: 1rem;
+            }
+
+            .anime-card p {
+                font-size: 0.85rem;
+            }
+
+            .ranking-number {
+                font-size: 2rem;
+            }
+
+            .ranking-card .col-2 {
+                display: none;
+            }
+
+            .ranking-card img {
+                height: 90px;
+            }
+
+            .ranking-card h5 {
+                font-size: 1rem;
+            }
+
+            .ranking-card p {
+                font-size: 0.8rem;
+            }
+
+            .ranking-card .rating-stars {
+                font-size: 0.8rem;
+            }
+
+            .nav-pills .nav-link {
+                font-size: 0.85rem;
+                padding: 0.4rem 0.75rem;
+            }
+
+
+            .card-body i {
+                font-size: 2.5rem;
+            }
+
+            .card-body h5 {
+                font-size: 1rem;
+            }
+
+            .card-body small {
+                font-size: 0.75rem;
+            }
+
+
+            footer {
+                text-align: center;
+            }
+
+            footer .d-flex {
+                justify-content: center;
+            }
+
+            footer h5,
+            footer h6 {
+                font-size: 1rem;
+            }
+
+            footer p,
+            footer a {
+                font-size: 0.85rem;
+            }
+
+            #backToTopBtn {
+                width: 42px;
+                height: 42px;
+                bottom: 0.75rem;
+                right: 0.75rem;
+            }
+        }
     </style>
 </head>
 
@@ -59,7 +181,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">
-                <i class="bi bi-film"></i> AniListo
+                <i class="bi bi-film"></i> AXEL
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -94,7 +216,7 @@
     <!-- ヒーローセクション -->
     <div class="hero-section">
         <div class="container text-center">
-            <h1 class="display-3 fw-bold mb-4">好きなanimeを見つけよう</h1>
+            <h1 class="display-3 fw-bold mb-4">運命の1本に出会おう</h1>
             <p class="lead mb-4">お気に入りのanimeを探そう</p>
             <div class="row justify-content-center">
                 <div class="col-md-6">
@@ -110,7 +232,6 @@
     </div>
 
     <div class="container">
-        <!-- 今期の注目作品 -->
         <section class="mb-5">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2 class="fw-bold">
@@ -120,84 +241,153 @@
             </div>
 
             <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-
                 <div class="carousel-inner">
 
                     <!-- スライド1 -->
                     <div class="carousel-item active">
                         <div class="row g-4">
+
+                            <!-- MFゴースト -->
                             <div class="col-12 col-md-4">
-                                <!-- カード①（そのまま） -->
-                                <div class="card anime-card position-relative">
-                                    <img src="images/異世界の勇者 ～運命の旅路～.webp" class="card-img-top img-fluid">
-                                    <div class="card-body">
-                                        <span class="badge bg-primary mb-2">ファンタジー</span>
-                                        <span class="badge bg-success mb-2">放送中</span>
-                                        <h5 class="fw-bold">異世界の勇者 ～運命の旅路～</h5>
-                                        <p class="text-muted text-clamp-3">
-                                            異世界に勇者として召喚された高校生・佐藤翔太が…
-                                        </p>
-                                        <div class="rating-stars">
-                                            ★★★★☆ <span class="text-dark ms-1">4.5</span>
+                                <a href="anime-detail2.html">
+                                    <div class="card anime-card">
+                                        <img src="MFG/visual_00.jpg" class="card-img-top" alt="MFゴースト">
+                                        <div class="card-body">
+                                            <div class="d-flex gap-2 mb-2">
+                                                <span class="badge bg-primary">モータースポーツ</span>
+                                                <span class="badge bg-success">放送中</span>
+                                            </div>
+                                            <h5 class="fw-bold card-title-nowrap">MFゴースト</h5>
+                                            <p class="text-muted text-clamp-3">
+                                                『頭文字D』の未来を描く公道レースアニメ。
+                                            </p>
+                                            <div class="rating-stars">★★★★☆ <span class="text-dark ms-1">4.5</span>
+                                            </div>
+                                            <small class="text-muted">1,234件</small>
                                         </div>
-                                        <small class="text-muted">1,234件のレビュー</small>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- 葬送のフリーレン -->
+                            <div class="col-12 col-md-4">
+                                <div class="card anime-card">
+                                    <img src="img2/frieren-anime2_M.jpg" class="card-img-top" alt="葬送のフリーレン">
+                                    <div class="card-body">
+                                        <div class="d-flex gap-2 mb-2">
+                                            <span class="badge bg-danger">異世界</span>
+                                            <span class="badge bg-success">放送中</span>
+                                        </div>
+                                        <h5 class="fw-bold card-title-nowrap">葬送のフリーレン</h5>
+                                        <p class="text-muted text-clamp-3">
+                                            魔王討伐後を描く静かなファンタジー。
+                                        </p>
+                                        <div class="rating-stars">★★★★★ <span class="text-dark ms-1">4.8</span></div>
+                                        <small class="text-muted">2,156件</small>
                                     </div>
                                 </div>
                             </div>
 
+                            <!-- 呪術廻戦 -->
                             <div class="col-12 col-md-4">
-                                <!-- カード② -->
                                 <div class="card anime-card">
-                                    <img src="images/桜色の約束.webp" class="card-img-top">
+                                    <img src="img2/jujutsukaisen3_M.jpg" class="card-img-top" alt="呪術廻戦">
                                     <div class="card-body">
-                                        <span class="badge bg-danger mb-2">恋愛</span>
-                                        <span class="badge bg-success mb-2">放送中</span>
-                                        <h5 class="fw-bold">桜色の約束</h5>
-                                        <p class="text-muted text-clamp-3">
-                                            高校最後の春、幼馴染との大切な“約束”を胸に…
-                                        </p>
-                                        <div class="rating-stars">
-                                            ★★★★★ <span class="text-dark ms-1">4.8</span>
+                                        <div class="d-flex gap-2 mb-2">
+                                            <span class="badge bg-info">バトル</span>
+                                            <span class="badge bg-success">放送中</span>
                                         </div>
-                                        <small class="text-muted">2,156件のレビュー</small>
+                                        <h5 class="fw-bold card-title-nowrap">呪術廻戦</h5>
+                                        <p class="text-muted text-clamp-3">
+                                            呪いと戦う呪術師たちの戦い。
+                                        </p>
+                                        <div class="rating-stars">★★★★☆ <span class="text-dark ms-1">4.2</span></div>
+                                        <small class="text-muted">987件</small>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-4">
-                                <!-- カード③ -->
-                                <div class="card anime-card">
-                                    <img src="images/量子戦士クロノス.webp" class="card-img-top">
-                                    <div class="card-body">
-                                        <span class="badge bg-info mb-2">SF</span>
-                                        <span class="badge bg-success mb-2">放送中</span>
-                                        <h5 class="fw-bold">量子戦士クロノス</h5>
-                                        <p class="text-muted text-clamp-3">
-                                            時空のゆがみに巻き込まれた少年が…
-                                        </p>
-                                        <div class="rating-stars">
-                                            ★★★★☆ <span class="text-dark ms-1">4.2</span>
-                                        </div>
-                                        <small class="text-muted">987件のレビュー</small>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
-                    <!-- スライド2（追加分） -->
+                    <!-- スライド2 -->
                     <div class="carousel-item">
                         <div class="row g-4">
-                            <div class="col-12 col-md-4">…別作品…</div>
-                            <div class="col-12 col-md-4">…別作品…</div>
-                            <div class="col-12 col-md-4">…別作品…</div>
+
+                            <!-- 推しの子 -->
+                            <div class="col-12 col-md-4">
+                                <div class="card anime-card">
+                                    <img src="img-m/ogp.jpg" class="card-img-top" alt="推しの子">
+                                    <div class="card-body">
+                                        <div class="d-flex gap-2 mb-2">
+                                            <span class="badge bg-primary">サスペンス</span>
+                                            <span class="badge bg-success">放送中</span>
+                                        </div>
+                                        <h5 class="fw-bold card-title-nowrap">推しの子</h5>
+                                        <p class="text-muted text-clamp-3">
+                                            芸能界の光と闇を描く衝撃作。
+                                        </p>
+                                        <div class="rating-stars">★★★★☆ <span class="text-dark ms-1">4.6</span></div>
+                                        <small class="text-muted">2,345件</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SPY×FAMILY -->
+                            <div class="col-12 col-md-4">
+                                <div class="card anime-card">
+                                    <img src="img-m/spy-family-1024x768.jpg" class="card-img-top" alt="SPY×FAMILY">
+                                    <div class="card-body">
+                                        <div class="d-flex gap-2 mb-2">
+                                            <span class="badge bg-primary">コメディ</span>
+                                            <span class="badge bg-warning text-dark">人気</span>
+                                        </div>
+                                        <h5 class="fw-bold card-title-nowrap">SPY×FAMILY</h5>
+                                        <p class="text-muted text-clamp-3">
+                                            仮初め家族のスパイコメディ。
+                                        </p>
+                                        <div class="rating-stars">★★★★☆ <span class="text-dark ms-1">4.7</span></div>
+                                        <small class="text-muted">2,890件</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ワンパンマン -->
+                            <div class="col-12 col-md-4">
+                                <div class="card anime-card">
+                                    <img src="img-m/0598-016376.jpg" class="card-img-top" alt="ワンパンマン">
+                                    <div class="card-body">
+                                        <div class="d-flex gap-2 mb-2">
+                                            <span class="badge bg-dark">アクション</span>
+                                            <span class="badge bg-success">放送中</span>
+                                        </div>
+                                        <h5 class="fw-bold card-title-nowrap">ワンパンマン</h5>
+                                        <p class="text-muted text-clamp-3">
+                                            最強ヒーローの爽快アクション。
+                                        </p>
+                                        <div class="rating-stars">★★★★☆ <span class="text-dark ms-1">4.3</span></div>
+                                        <small class="text-muted">1,567件</small>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
                 </div>
-            </div>
 
+                <!-- 操作ボタン -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
         </section>
+
 
         <!-- 人気ランキング -->
         <section class="mb-5">
@@ -234,6 +424,8 @@
                     <!-- 総合ランキング -->
                     <div class="tab-pane fade show active" id="weeklyTop" role="tabpanel">
                         <div class="row g-3">
+
+                            <!-- 1位 MFゴースト -->
                             <div class="col-md-6">
                                 <div class="card ranking-card">
                                     <div class="card-body">
@@ -242,29 +434,28 @@
                                                 <div class="ranking-number">1</div>
                                             </div>
                                             <div class="col-3">
-                                                <img src="images/最強魔法使いの転生.webp" class="img-fluid rounded" alt="1位">
+                                                <img src="MFG/visual_00.jpg" class="img-fluid rounded" alt="MFゴースト">
                                             </div>
                                             <div class="col-7">
                                                 <span class="badge bg-warning text-dark mb-2">1位</span>
-                                                <h5 class="fw-bold mb-2 card-title-nowrap">最強魔法使いの転生</h5>
+                                                <h5 class="fw-bold mb-2 card-title-nowrap">MFゴースト</h5>
                                                 <p class="text-muted small mb-2 text-clamp-2">
-                                                    史上最強の魔法使いが未来へ転生。失われた魔法文明を前に、新たな仲間と共に世界の謎と陰謀へ挑む、爽快で壮大な転生ファンタジーアクション。
+                                                    『頭文字D』の未来を描く公道レースアニメ。人間が操るレース「MFG」に挑む天才ドライバーの激走を描く。
                                                 </p>
                                                 <div class="rating-stars small">
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                                                     <i class="bi bi-star-half"></i>
-                                                    <span class="text-dark">4.9</span>
+                                                    <span class="text-dark">4.5</span>
                                                 </div>
-                                                <small class="text-muted">3,456件のレビュー</small>
+                                                <small class="text-muted">1,234件のレビュー</small>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
+                            <!-- 2位 葬送のフリーレン -->
                             <div class="col-md-6">
                                 <div class="card ranking-card">
                                     <div class="card-body">
@@ -273,29 +464,29 @@
                                                 <div class="ranking-number">2</div>
                                             </div>
                                             <div class="col-3">
-                                                <img src="images/竜騎士の伝説.webp" class="img-fluid rounded" alt="2位">
+                                                <img src="img2/frieren-anime2_M.jpg" class="img-fluid rounded"
+                                                    alt="葬送のフリーレン">
                                             </div>
                                             <div class="col-7">
                                                 <span class="badge bg-secondary mb-2">2位</span>
-                                                <h5 class="fw-bold mb-2 card-title-nowrap">竜騎士の伝説</h5>
+                                                <h5 class="fw-bold mb-2 card-title-nowrap">葬送のフリーレン</h5>
                                                 <p class="text-muted small mb-2 text-clamp-2">
-                                                    竜と契約した若き騎士が、仲間と共に迫りくる脅威と古代の謎に立ち向かう。絆と勇気が導く、壮大な冒険と伝説が紡がれるファンタジー物語。
+                                                    魔王討伐後の世界を旅するエルフ・フリーレンが、人を知るための旅に出る静かなファンタジー。
                                                 </p>
                                                 <div class="rating-stars small">
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                                                     <i class="bi bi-star-half"></i>
-                                                    <span class="text-dark">4.7</span>
+                                                    <span class="text-dark">4.8</span>
                                                 </div>
-                                                <small class="text-muted">2,890件のレビュー</small>
+                                                <small class="text-muted">2,156件のレビュー</small>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
+                            <!-- 3位 呪術廻戦 -->
                             <div class="col-md-6">
                                 <div class="card ranking-card">
                                     <div class="card-body">
@@ -304,19 +495,48 @@
                                                 <div class="ranking-number">3</div>
                                             </div>
                                             <div class="col-3">
-                                                <img src="images/魔法学園の日常.webp" class="img-fluid rounded" alt="3位">
+                                                <img src="img2/jujutsukaisen3_M.jpg" class="img-fluid rounded"
+                                                    alt="呪術廻戦">
                                             </div>
                                             <div class="col-7">
                                                 <span class="badge bg-secondary mb-2">3位</span>
-                                                <h5 class="fw-bold mb-2 card-title-nowrap">魔法学園の日常</h5>
+                                                <h5 class="fw-bold mb-2 card-title-nowrap">呪術廻戦</h5>
                                                 <p class="text-muted small mb-2 text-clamp-2">
-                                                    魔法学園に通う個性豊かな生徒たちが、授業や試験、友情や恋に揺れながら日々成長していく。笑いとときめきがあふれる、魔法世界の青春ファンタジー。
+                                                    呪いと戦う呪術師たちの壮絶な戦いを描くダークファンタジー。
                                                 </p>
                                                 <div class="rating-stars small">
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star"></i>
+                                                    <span class="text-dark">4.2</span>
+                                                </div>
+                                                <small class="text-muted">987件のレビュー</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 4位 推しの子 -->
+                            <div class="col-md-6">
+                                <div class="card ranking-card">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col-2 text-center">
+                                                <div class="ranking-number">4</div>
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="img-m/ogp.jpg" class="img-fluid rounded" alt="推しの子">
+                                            </div>
+                                            <div class="col-7">
+                                                <span class="badge bg-secondary mb-2">4位</span>
+                                                <h5 class="fw-bold mb-2 card-title-nowrap">推しの子</h5>
+                                                <p class="text-muted small mb-2 text-clamp-2">
+                                                    芸能界の光と闇を描く衝撃作。転生×ミステリーの新感覚ストーリー。
+                                                </p>
+                                                <div class="rating-stars small">
+                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                                                     <i class="bi bi-star-half"></i>
                                                     <span class="text-dark">4.6</span>
                                                 </div>
@@ -327,38 +547,9 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
-                                <div class="card ranking-card">
-                                    <div class="card-body">
-                                        <div class="row align-items-center">
-                                            <div class="col-2 text-center">
-                                                <div class="ranking-number">4</div>
-                                            </div>
-                                            <div class="col-3">
-                                                <img src="images/近未来探偵ネオ.webp" class="img-fluid rounded" alt="4位">
-                                            </div>
-                                            <div class="col-7">
-                                                <span class="badge bg-secondary mb-2">4位</span>
-                                                <h5 class="fw-bold mb-2 card-title-nowrap">未来探偵ネオ</h5>
-                                                <p class="text-muted small mb-2 text-clamp-2">
-                                                    近未来都市を舞台に、若き探偵ネオが最新テクノロジーと鋭い推理力で複雑な事件に挑む。陰謀が渦巻く世界で真実を追い続ける、スタイリッシュなSFミステリーアクション。
-                                                </p>
-                                                <div class="rating-stars small">
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star"></i>
-                                                    <span class="text-dark">4.4</span>
-                                                </div>
-                                                <small class="text-muted">1,987件のレビュー</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
+
 
                     <div class="tab-pane fade" id="monthlyTop" role="tabpanel">
                         <div class="text-center py-5">
@@ -431,19 +622,18 @@
         </section>
     </div>
 
-    <!-- フッター -->
     <footer class="py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> AniListo</h5>
+                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> AXEL</h5>
                     <p class="text-light">あなたの好きなアニメを見つけて、共有しよう。</p>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="fw-bold mb-3">サイト情報</h6>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">About</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">利用規約</a></li>
+                        <li><a href="anime-kiyaku.html" class="text-light text-decoration-none">利用規約</a></li>
                         <li><a href="#" class="text-light text-decoration-none">プライバシー</a></li>
                     </ul>
                 </div>
@@ -466,7 +656,7 @@
                 </div>
             </div>
             <hr class="border-light">
-            <p class="text-center text-light mb-0">&copy; 2025 AniListo. All rights reserved.</p>
+            <p class="text-center text-light mb-0">2025 AXEL. All rights reserved.</p>
         </div>
     </footer>
     <button id="backToTopBtn" class="btn shadow d-flex align-items-center justify-content-center">

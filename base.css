@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #212529;
+  --primary-color: #3c2e2e;
   --viewing-color: var(--bs-primary);
   --completed-color: var(--bs-success);
   --planned-color: var(--bs-warning);
@@ -31,7 +31,7 @@
 .nav-pills .nav-link:hover,
 .btn-outline-dark:hover {
   background-color: transparent;
-  color: #666;
+  color: #565050;
 }
 
 .nav-pills .nav-link.active,

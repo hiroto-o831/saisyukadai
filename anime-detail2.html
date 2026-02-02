@@ -8,119 +8,187 @@
     <!DOCTYPE html>
     <html lang="ja">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>異世界の勇者 ～運命の旅路～ - AnimeHub</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="base.css">
-        <link rel="icon" href="favicon.png">
-        <style>
-            .hero-image {
-                width: 100%;
-                height: 500px;
-                object-fit: cover;
-                border-radius: 15px;
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFゴースト - AnimeHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <link rel="icon" href="fabi2.png">
+    <style>
+        .hero-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .rating-stars {
+            color: #fbbf24;
+        }
+
+        .rating-large {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .character-card {
+            transition: transform 0.3s ease;
+
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .character-img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            filter: invert(1) brightness(1.3) contrast(1.3);
+        }
+
+        .accordion-button::after {
+            filter: invert(0);
+        }
+
+
+        .stat-card {
+            background: linear-gradient(135deg, #4c1d95 0%, #312e81 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .action-btn {
+            transition: transform 0.2s ease;
+        }
+
+        .action-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+            object-position: 50% 15%;
+            border-radius: 10px;
+        }
+
+        .float-link {
+            display: inline-block;
+            transition: transform .2s, box-shadow .2s;
+        }
+
+        .float-link:hover {
+            transform: translateY(-2px);
+        }
+
+        #subCharacterCarousel .carousel-control-prev,
+        #subCharacterCarousel .carousel-control-next {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #ff3c00, #ff9500);
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(255, 60, 0, 0.7);
+        }
+
+        #subCharacterCarousel .carousel-control-prev:hover,
+        #subCharacterCarousel .carousel-control-next:hover {
+            box-shadow: 0 0 25px rgba(255, 60, 0, 1);
+        }
+
+        @media (max-width: 576px) {
+
+            body {
+                font-size: 0.95rem;
+                line-height: 1.6;
             }
 
-            .rating-stars {
-                color: #fbbf24;
+            section {
+                margin-bottom: 3rem;
             }
 
-            .rating-large {
-                font-size: 3rem;
-                font-weight: bold;
+            .navbar-brand {
+                font-size: 1.2rem;
             }
 
-            .character-card {
-                transition: transform 0.3s ease;
-
+            .navbar .nav-link {
+                padding: 0.75rem 0;
+                font-size: 1rem;
             }
 
-            .character-card:hover {
-                transform: translateY(-5px);
+            .hero-section {
+                padding: 3rem 1rem;
+                text-align: center;
             }
 
-            .character-img {
-                width: 100%;
-                height: 250px;
-                object-fit: cover;
-                border-radius: 10px;
+            .hero-section h1 {
+                font-size: 2rem;
+                line-height: 1.3;
+                margin-bottom: 1rem;
             }
 
-            .accordion-button:not(.collapsed) {
-                background-color: var(--primary-color);
-                color: white;
+            .hero-section p {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
             }
 
-            .accordion-button:not(.collapsed)::after {
-                filter: invert(1) brightness(1.3) contrast(1.3);
+            .hero-section .input-group-lg .form-control {
+                font-size: 0.9rem;
             }
 
-            .accordion-button::after {
-                filter: invert(0);
+            .hero-section .btn {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
             }
 
-
-            .stat-card {
-                background: linear-gradient(135deg, #4c1d95 0%, #312e81 100%);
-                color: white;
-                border-radius: 15px;
-                padding: 20px;
+            footer {
+                text-align: center;
             }
 
-            .action-btn {
-                transition: transform 0.2s ease;
+            footer h5,
+            footer h6 {
+                font-size: 1rem;
             }
 
-            .action-btn:hover {
-                transform: scale(1.05);
+            footer p,
+            footer a {
+                font-size: 0.85rem;
             }
 
-            .carousel-item img {
-                height: 400px;
-                object-fit: cover;
-                object-position: 50% 15%;
-                border-radius: 10px;
+            footer .d-flex {
+                justify-content: center;
             }
 
-            .float-link {
-                display: inline-block;
-                transition: transform .2s, box-shadow .2s;
+            #backToTopBtn {
+                width: 42px;
+                height: 42px;
+                bottom: 0.75rem;
+                right: 0.75rem;
             }
+        }
+    </style>
+</head>
 
-            .float-link:hover {
-                transform: translateY(-2px);
-            }
-
-            #subCharacterCarousel .carousel-control-prev,
-            #subCharacterCarousel .carousel-control-next {
-                width: 70px;
-                height: 70px;
-                background: linear-gradient(135deg, #ff3c00, #ff9500);
-                border-radius: 50%;
-                box-shadow: 0 0 15px rgba(255, 60, 0, 0.7);
-            }
-
-            #subCharacterCarousel .carousel-control-prev:hover,
-            #subCharacterCarousel .carousel-control-next:hover {
-                box-shadow: 0 0 25px rgba(255, 60, 0, 1);
-            }
-        </style>
-    </head>
-
-<body>
-    <!-- ナビゲーションバー -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
-                <i class="bi bi-film"></i> AnimeHub
+                <i class="bi bi-film"></i> AXEL
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -158,7 +226,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">ホーム</a></li>
                 <li class="breadcrumb-item"><a href="anime-list.html">作品一覧</a></li>
-                <li class="breadcrumb-item active" aria-current="page">異世界の勇者 ～運命の旅路～</li>
+                <li class="breadcrumb-item active" aria-current="page">MFゴースト</li>
             </ol>
         </nav>
 
@@ -176,27 +244,27 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/異世界の勇者 ～運命の旅路～.webp" class="d-block w-100" alt="メインビジュアル">
+                            <img src="MFG/MF00.png" class="d-block w-100" alt="メインビジュアル">
                             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                                 <h5>メインビジュアル</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/battle.webp" class="d-block w-100" alt="バトルシーン">
+                            <img src="MFG/visual_01.jpg" class="d-block w-100" alt="バトルシーン">
                             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                                 <h5>迫力のバトルシーン</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/ordinary.webp" class="d-block w-100" alt="日常シーン">
+                            <img src="MFG/visual_002.jpg" class="d-block w-100" alt="日常シーン">
                             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
-                                <h5>仲間との日常</h5>
+                                <h5>登場人物</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/scenery.webp" class="d-block w-100" alt="異世界の風景">
+                            <img src="MFG/visual_02.jpg" class="d-block w-100" alt="異世界の風景">
                             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
-                                <h5>美しい異世界の風景</h5>
+                                <h5>登場車</h5>
                             </div>
                         </div>
                     </div>
@@ -348,9 +416,9 @@
                 </div>
                 <div class="d-grid gap-2 mb-4">
                     <a href="anime-PV.html">
-                    <button class="btn btn-outline-primary btn-lg action-btn">
-                        👀PVを見に行く👀
-                    </button>
+                        <button class="btn btn-outline-primary btn-lg action-btn">
+                            👀PVを見に行く👀
+                        </button>
                     </a>
                 </div>
             </div>
@@ -488,18 +556,19 @@
                             <div class="row g-4">
                                 <div class="col-md-3">
                                     <div class="card character-card h-100">
-                                        <img src="images/syouta.webp" class="card-img-top character-img" alt="カナタ">
+                                        <img src="img2/kanata_thumb.png" class="card-img-top character-img" alt="カナタ">
                                         <div class="card-body">
                                             <h5 class="card-title fw-bold">片桐 夏向</h5>
                                             <p class="text-muted small mb-2">CV: 内田雄馬</p>
                                             <p class="card-text small">
                                                 本作の主人公で、卓越したドライビング技術を持つ若き天才レーサー。英国帰りの実力者として物語を牽引する存在。</p>
+                                            <a href="anime-detail.html">キャラ紹介を見る</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="card character-card h-100">
-                                        <img src="images/erina.webp" class="card-img-top character-img" alt="レン">
+                                        <img src="img2/ren_thumb.png" class="card-img-top character-img" alt="レン">
                                         <div class="card-body">
                                             <h5 class="card-title fw-bold">西園寺 恋</h5>
                                             <p class="text-muted small mb-2">CV: 佐倉綾音</p>
@@ -534,7 +603,8 @@
                                             <div class="col-md-3">
                                                 <!-- 高橋 啓介 -->
                                                 <div class="card character-card h-100">
-                                                    <img src="images/king.webp" class="card-img-top character-img">
+                                                    <img src="img2/keisuke_thumb.png"
+                                                        class="card-img-top character-img">
                                                     <div class="card-body">
                                                         <h5 class="card-title fw-bold">高橋 啓介</h5>
                                                         <p class="text-muted small mb-2">CV: 関智一</p>
@@ -548,7 +618,7 @@
                                             <div class="col-md-3">
                                                 <!-- 小柏 カイ -->
                                                 <div class="card character-card h-100">
-                                                    <img src="images/devil.webp" class="card-img-top character-img">
+                                                    <img src="img2/kai_thumb.png" class="card-img-top character-img">
                                                     <div class="card-body">
                                                         <h5 class="card-title fw-bold">小柏 カイ</h5>
                                                         <p class="text-muted small mb-2">CV: 神奈延年</p>
@@ -558,11 +628,22 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            <div class="col-md-3">
+                                                <div class="card character-card h-100">
+                                                    <img src="img2/nozomi_thumb.png" class="card-img-top character-img">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold">北原 望</h5>
+                                                        <p class="text-muted small mb-2">CV: 芹澤優</p>
+                                                        <p class="card-text small">
+                                                            兄との連携走行を得意とする女性ドライバー
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="col-md-3">
                                                 <!-- 緒方 -->
                                                 <div class="card character-card h-100">
-                                                    <img src="images/wiseman.webp" class="card-img-top character-img">
+                                                    <img src="img2/ogata_thumb.png" class="card-img-top character-img">
                                                     <div class="card-body">
                                                         <h5 class="card-title fw-bold">緒方</h5>
                                                         <p class="text-muted small mb-2">CV: 畠中祐</p>
@@ -573,19 +654,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3">
-                                                <!-- 諸星 瀬名 -->
-                                                <div class="card character-card h-100">
-                                                    <img src="images/merchant.webp" class="card-img-top character-img">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title fw-bold">諸星 瀬名</h5>
-                                                        <p class="text-muted small mb-2">CV: 矢代拓</p>
-                                                        <p class="card-text small">
-                                                            神15の一員。
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            >
                                         </div>
                                     </div>
 
@@ -595,7 +664,7 @@
                                             <div class="col-md-3">
                                                 <!-- 京子 -->
                                                 <div class="card character-card h-100">
-                                                    <img src="images/merchant.webp" class="card-img-top character-img">
+                                                    <img src="img2/kyoko_thumb.png" class="card-img-top character-img">
                                                     <div class="card-body">
                                                         <h5 class="card-title fw-bold">京子</h5>
                                                         <p class="text-muted small mb-2">CV: 飯田友子</p>
@@ -605,11 +674,23 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            <div class="col-md-3">
+                                                <!-- 諸星 瀬名 -->
+                                                <div class="card character-card h-100">
+                                                    <img src="img2/sena_thumb.png" class="card-img-top character-img">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold">諸星 瀬名</h5>
+                                                        <p class="text-muted small mb-2">CV: 矢代拓</p>
+                                                        <p class="card-text small">
+                                                            神15の一員。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="col-md-3">
                                                 <!-- 相葉 瞬 -->
                                                 <div class="card character-card h-100">
-                                                    <img src="images/ryuu.webp" class="card-img-top character-img">
+                                                    <img src="img2/shun_thumb.png" class="card-img-top character-img">
                                                     <div class="card-body">
                                                         <h5 class="card-title fw-bold">相葉 瞬</h5>
                                                         <p class="text-muted small mb-2">CV: 小野大輔</p>
@@ -623,7 +704,8 @@
                                             <div class="col-md-3">
                                                 <!-- ミハイル -->
                                                 <div class="card character-card h-100">
-                                                    <img src="images/runa.webp" class="card-img-top character-img">
+                                                    <img src="img2/michael_thumb.png"
+                                                        class="card-img-top character-img">
                                                     <div class="card-body">
                                                         <h5 class="card-title fw-bold">ミハイル</h5>
                                                         <p class="text-muted small mb-2">CV: 神谷浩史</p>
@@ -633,6 +715,7 @@
                                                     </div>
                                                 </div>
                                             </div>
+
                                         </div>
                                     </div>
 
@@ -657,19 +740,18 @@
         </section>
     </div>
 
-    <!-- フッター -->
     <footer class="py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> AnimeHub</h5>
+                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> AXEL</h5>
                     <p class="text-light">あなたの好きなアニメを見つけて、共有しよう。</p>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="fw-bold mb-3">サイト情報</h6>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">About</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">利用規約</a></li>
+                        <li><a href="anime-kiyaku.html" class="text-light text-decoration-none">利用規約</a></li>
                         <li><a href="#" class="text-light text-decoration-none">プライバシー</a></li>
                     </ul>
                 </div>
@@ -692,64 +774,12 @@
                 </div>
             </div>
             <hr class="border-light">
-            <p class="text-center text-light mb-0">&copy; 2025 AnimeHub. All rights reserved.</p>
-        </div>
-    </footer>
-    <button id="backToTopBtn" class="btn shadow d-flex align-items-center justify-content-center">
-        <i class="bi bi-chevron-up"></i>
-    </button>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="common.js"></script>
-</body>
-
-</html>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
-    rel="stylesheet">
-<link rel="stylesheet" href="base.css">
-<link rel="icon" href="favicon.png">
-</head>
-
-<body>
-    <!-- ナビゲーションバー -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <i class="bi bi-film"></i> AnimeHub
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">ホーム</a></li>
-                    <li class="nav-item"><a class="nav-link" href="anime-list.html">作品一覧</a></li>
-                    <li class="nav-item"><a class="nav-link" href="anime-ranking.html">ランキング</a></li>
-                    <li class="nav-item"><a class="nav-link" href="anime-mylist.html">マイリスト</a></li>
-                    <li class="nav-item"><a class="nav-link" href="anime-community.html">コミュニティ</a></li>
-                    <li class="nav-item"><a class="nav-link d-lg-none" href="anime-login.html">ログイン</a></li>
-                </ul>
-                <a href="anime-login.html" class="btn btn-light ms-3 d-none d-lg-block">
-                    <i class="bi bi-person-circle"></i> ログイン
-                </a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- フッター -->
-    <footer class="py-4">
-        <div class="container text-center">
-            <p class="text-light mb-0">&copy; 2025 AnimeHub</p>
+            <p class="text-center text-light mb-0">&copy; 2025 AXEL. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="common.js"></script>
-</body>
+    </body>
 
 </html>

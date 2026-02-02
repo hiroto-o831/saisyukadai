@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> - AnimeHub</title>
+    <title> キャラ紹介 - MFゴースト - AXEL</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="base.css">
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="fabi2.png">
     <style>
         .hero-image {
             width: 100%;
@@ -165,6 +165,77 @@
         .other-chars img:hover {
             transform: scale(1.05);
         }
+
+        @media (max-width: 576px) {
+
+            body {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+
+            section {
+                margin-bottom: 3rem;
+            }
+
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+
+            .navbar .nav-link {
+                padding: 0.75rem 0;
+                font-size: 1rem;
+            }
+
+            .hero-section {
+                padding: 3rem 1rem;
+                text-align: center;
+            }
+
+            .hero-section h1 {
+                font-size: 2rem;
+                line-height: 1.3;
+                margin-bottom: 1rem;
+            }
+
+            .hero-section p {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .hero-section .input-group-lg .form-control {
+                font-size: 0.9rem;
+            }
+
+            .hero-section .btn {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+
+            footer {
+                text-align: center;
+            }
+
+            footer h5,
+            footer h6 {
+                font-size: 1rem;
+            }
+
+            footer p,
+            footer a {
+                font-size: 0.85rem;
+            }
+
+            footer .d-flex {
+                justify-content: center;
+            }
+
+            #backToTopBtn {
+                width: 42px;
+                height: 42px;
+                bottom: 0.75rem;
+                right: 0.75rem;
+            }
+        }
     </style>
 </head>
 
@@ -173,7 +244,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
-                <i class="bi bi-film"></i> AnimeHub
+                <i class="bi bi-film"></i> AXEL
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -209,7 +280,7 @@
     <section class="container my-5">
         <div class="character-hero">
             <div class="character-info">
-                <div class="character-name">片桐 夏向（カナタ　リヴィントン）</div>
+                <div class="character-name">片桐 夏向</div>
                 <div class="character-en">Kanata Katagiri</div>
                 <div class="character-meta mt-4">
                     <span>年齢</span>
@@ -234,19 +305,18 @@
         </div>
     </section>
 
-    <!-- フッター -->
     <footer class="py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> AnimeHub</h5>
+                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> AXEL</h5>
                     <p class="text-light">あなたの好きなアニメを見つけて、共有しよう。</p>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="fw-bold mb-3">サイト情報</h6>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">About</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">利用規約</a></li>
+                        <li><a href="anime-kiyaku.html" class="text-light text-decoration-none">利用規約</a></li>
                         <li><a href="#" class="text-light text-decoration-none">プライバシー</a></li>
                     </ul>
                 </div>
@@ -269,7 +339,7 @@
                 </div>
             </div>
             <hr class="border-light">
-            <p class="text-center text-light mb-0">&copy; 2025 AnimeHub. All rights reserved.</p>
+            <p class="text-center text-light mb-0">&copy; 2025 AXEL. All rights reserved.</p>
         </div>
     </footer>
     <button id="backToTopBtn" class="btn shadow d-flex align-items-center justify-content-center">

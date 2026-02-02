@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作品一覧 - AniListo</title>
+    <title>作品一覧 - AXEL</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="base.css">
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="fabi2.png">
     <style>
         .filter-card {
             position: sticky;
@@ -36,6 +36,77 @@
             background-color: var(--primary-color);
             border-color: var(--primary-color);
         }
+
+        @media (max-width: 576px) {
+
+            body {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+
+            section {
+                margin-bottom: 3rem;
+            }
+
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+
+            .navbar .nav-link {
+                padding: 0.75rem 0;
+                font-size: 1rem;
+            }
+
+            .hero-section {
+                padding: 3rem 1rem;
+                text-align: center;
+            }
+
+            .hero-section h1 {
+                font-size: 2rem;
+                line-height: 1.3;
+                margin-bottom: 1rem;
+            }
+
+            .hero-section p {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .hero-section .input-group-lg .form-control {
+                font-size: 0.9rem;
+            }
+
+            .hero-section .btn {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+
+            footer {
+                text-align: center;
+            }
+
+            footer h5,
+            footer h6 {
+                font-size: 1rem;
+            }
+
+            footer p,
+            footer a {
+                font-size: 0.85rem;
+            }
+
+            footer .d-flex {
+                justify-content: center;
+            }
+
+            #backToTopBtn {
+                width: 42px;
+                height: 42px;
+                bottom: 0.75rem;
+                right: 0.75rem;
+            }
+        }
     </style>
 </head>
 
@@ -44,7 +115,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
-                <i class="bi bi-film"></i> AniListo
+                <i class="bi bi-film"></i> AXEL
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -275,16 +346,18 @@
                 <div class="row g-4 mb-4" id="contentDisplay">
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card position-relative">
-                            <img src="images/異世界の勇者 ～運命の旅路～.webp" class="card-img-top" alt="異世界の勇者">
+                            <img src="MFG/visual_00.jpg" class="card-img-top" alt="異世界の勇者">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-primary">ファンタジー</span>
+                                    <span class="badge bg-primary">モータースポーツ</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">異世界の勇者 ～運命の旅路～</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">MFゴースト</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    異世界に勇者として召喚された高校生・佐藤翔太が、仲間との絆を力に魔王軍や陰謀へ挑む。成長と感動が交錯する、胸躍る王道ファンタジー冒険譚。</p>
-                                <a href="anime-detail.html" class="stretched-link"></a>
+                                    『頭文字D』の未来を描く公道レースアニメ。
+                                    自動運転が普及した日本で、人間が操るレース「MFG」に挑む若き天才ドライバー・片桐カナタが、失踪した父の手がかりを求めながら激走する物語。リアルな車描写とスピード感が魅力。
+                                </p>
+                                <a href="anime-detail2.html" class="stretched-link"></a>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -302,15 +375,17 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/桜色の約束.webp" class="card-img-top" alt="桜色の約束">
+                            <img src="img2/frieren-anime2_M.jpg" class="card-img-top" alt="桜色の約束">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-danger">恋愛</span>
+                                    <span class="badge bg-danger">異世界</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">桜色の約束</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">葬送のフリーレン</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    高校最後の春。幼馴染との小さな“約束”を胸に、揺れる想いと未来への一歩を描く、切なくも温かい青春ラブストーリー。</p>
+                                    勇者一行が魔王を倒した“その後”を描くファンタジーアニメ。
+                                    長命なエルフ・フリーレンが、仲間との別れをきっかけに「人を知る旅」へ出る物語で、静かな世界観の中に深い感情と成長が描かれる。心に残る余韻が魅力の作品。
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -328,15 +403,17 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/量子戦士クロノス.webp" class="card-img-top" alt="量子戦士">
+                            <img src="img2/jujutsukaisen3_M.jpg" class="card-img-top" alt="量子戦士">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-info">SF</span>
+                                    <span class="badge bg-info">バトルアクション</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">量子戦士クロノス</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">呪術廻戦</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    時空のゆがみに巻き込まれた少年が“量子戦士”として覚醒。過去と未来を駆け巡り、崩壊する世界を救うため仲間と共に戦い抜く、スケール壮大なSFアクション。</p>
+                                    “呪い”と呼ばれる怪異と戦う呪術師たちの戦いを描くダークファンタジーアニメ。
+                                    特級呪物「両面宿儺」を体内に宿した高校生・虎杖悠仁が、仲間とともに危険な任務に挑みながら成長していく物語。迫力あるバトルと重厚な世界観が魅力。
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -354,15 +431,17 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/魔法学園の日常.webp" class="card-img-top" alt="魔法学園">
+                            <img src="img-m/ogp.jpg" class="card-img-top" alt="魔法学園">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-primary">ファンタジー</span>
+                                    <span class="badge bg-primary">サスペンス</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">魔法学園の日常</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">推しの子</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    魔法学園に通う個性豊かな生徒たちが、授業や試験、友情や恋に揺れながら日々成長していく。笑いとときめきがあふれる、魔法世界の青春ファンタジー。</p>
+                                    芸能界の光と闇を描くサスペンス要素のあるドラマアニメ。
+                                    “推し”のアイドル・アイの子どもとして転生した主人公・アクアが、芸能界の裏側に踏み込みながら、母の死の真相を追っていく物語。華やかさと残酷さが交錯する世界観が魅力。
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -380,15 +459,17 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/竜騎士の伝説.webp" class="card-img-top" alt="竜騎士">
+                            <img src="img-m/spy-family-1024x768.jpg" class="card-img-top" alt="竜騎士">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-primary">ファンタジー</span>
+                                    <span class="badge bg-primary">コメディ</span>
                                     <span class="badge bg-warning text-dark">人気</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">竜騎士の伝説</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">SPY×FAMILY</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    竜と契約した若き騎士が、仲間と共に迫りくる脅威と古代の謎に立ち向かう。絆と勇気が導く、壮大な冒険と伝説が紡がれるファンタジー物語。</p>
+                                    スパイ・殺し屋・超能力者という秘密を抱えた“仮初めの家族”が織りなすコメディアクションアニメ。
+                                    任務のために家族を演じることになったロイド、ヨル、アーニャが、それぞれの秘密を隠しながら日常とミッションに奮闘していく。笑いと温かさが同居する魅力的な作品。
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -406,15 +487,17 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/都市伝説探偵.webp" class="card-img-top" alt="都市伝説">
+                            <img src="img-m/0598-016376.jpg" class="card-img-top" alt="都市伝説">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-dark">ホラー</span>
+                                    <span class="badge bg-dark">アクション</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">都市伝説探偵</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">ワンパンマン</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    現代の学園で囁かれる“都市伝説”が次々と現実化。謎を追う探偵部の生徒たちが、恐怖と真相に迫っていく。怪異と推理が交錯する学園ホラーミステリー。</p>
+                                    どんな敵も“ワンパン”で倒してしまう最強ヒーロー・サイタマの日常を描くアクションコメディ。
+                                    圧倒的な力ゆえの退屈さや葛藤を抱えつつ、個性豊かなヒーローや怪人たちとの騒がしい日々が展開される。爽快感とギャグセンスが魅力の作品。
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -432,15 +515,17 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/近未来探偵ネオ.webp" class="card-img-top" alt="未来探偵">
+                            <img src="img-m/thumb.png" class="card-img-top" alt="未来探偵">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-info">SF</span>
+                                    <span class="badge bg-info">アクション</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">未来探偵ネオ</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">僕のヒーローアカデミア</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    近未来都市を舞台に、若き探偵ネオが最新テクノロジーと鋭い推理力で複雑な事件に挑む。陰謀が渦巻く世界で真実を追い続ける、スタイリッシュなSFミステリーアクション。</p>
+                                    “個性”と呼ばれる超能力が当たり前になった世界で、ヒーローを目指す少年たちの成長を描くアクションアニメ。
+                                    無個性だった少年・緑谷出久が、憧れのヒーローから力を受け継ぎ、仲間とともに困難に立ち向かっていく物語。熱いバトルと友情が魅力の作品。
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -458,16 +543,16 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/音楽少女のメロディ.webp" class="card-img-top" alt="音楽少女">
+                            <img src="img-m/4315e9696d7f95f2.jpg" class="card-img-top" alt="音楽少女">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-danger">恋愛</span>
+                                    <span class="badge bg-danger">アクション</span>
                                     <span class="badge bg-secondary">完結</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">音楽少女のメロディ</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">ワンピース</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    音楽に情熱を注ぐ少女たちが、友情や恋、夢に揺れながら成長していく姿を描く。笑顔と涙、感動が溢れる青春音楽ストーリー。
-
+                                    海賊王を目指す少年・モンキー・D・ルフィが仲間とともに大海原を冒険する王道アドベンチャーアニメ。
+                                    “ひとつなぎの大秘宝（ワンピース）”を巡り、強敵との戦い、仲間との絆、壮大な世界の謎が描かれる。熱さと感動が詰まった長編作品。
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
@@ -486,15 +571,17 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/料理バトル王.webp" class="card-img-top" alt="料理バトル">
+                            <img src="img-m/main_visual_first.jpg" class="card-img-top" alt="料理バトル">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge" style="background-color: #f97316;">グルメ</span>
+                                    <span class="badge" style="background-color: #f97316;">ミステリー</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">料理バトル王</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">薬屋のひとりごと</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    情熱と技をぶつけ、究極の一皿を目指す少年たちの熱血料理バトル。友情やライバルとの絆を胸に、最強の料理人への道を駆け抜けるグルメアクション。</p>
+                                    後宮を舞台に“毒”と“薬”の知識を武器に事件を解き明かすミステリー系アニメ。
+                                    薬師の少女・猫猫（マオマオ）が、持ち前の観察眼と知識で後宮に潜む謎や陰謀に挑んでいく物語。知的な推理と独特の世界観が魅力の作品。
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -546,14 +633,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> AniListo</h5>
+                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> AXEL</h5>
                     <p class="text-light">あなたの好きなアニメを見つけて、共有しよう。</p>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="fw-bold mb-3">サイト情報</h6>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">About</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">利用規約</a></li>
+                        <li><a href="anime-kiyaku.html" class="text-light text-decoration-none">利用規約</a></li>
                         <li><a href="#" class="text-light text-decoration-none">プライバシー</a></li>
                     </ul>
                 </div>
@@ -576,7 +663,7 @@
                 </div>
             </div>
             <hr class="border-light">
-            <p class="text-center text-light mb-0">&copy; 2025 AniListo. All rights reserved.</p>
+            <p class="text-center text-light mb-0">&copy; 2025 AXEL. All rights reserved.</p>
         </div>
     </footer>
     <button id="backToTopBtn" class="btn shadow d-flex align-items-center justify-content-center">
