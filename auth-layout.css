@@ -3,6 +3,7 @@
   --secondary-color: #812e2e;
 }
 
+
 body {
   background: linear-gradient(180deg, #341d1d 0%, #5d4040 100%);
   min-height: 100vh;
